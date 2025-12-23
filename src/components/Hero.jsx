@@ -41,7 +41,7 @@ const Hero = () => {
 
       {/* DESCRIPTION */}
       <p className="mt-4 max-w-2xl px-6 text-white/70 text-sm md:text-base leading-relaxed">
-        Undergraduate student of Information Systems at Singaperbangsa Karawang University
+        Undergraduate student of Information Systems at University of Singaperbangsa Karawang
         with an interest in digital systems, academic projects, and technology-based solutions.
       </p>
 
