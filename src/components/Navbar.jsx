@@ -1,91 +1,107 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll'; 
+import React, { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const itemClass =
+    "cursor-pointer text-white/80 hover:text-white transition font-medium relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-400 hover:after:w-full after:transition-all after:duration-300";
+
   return (
-    <nav className=" bg-red-950 text-pink-200 fixed w-full shadow-red-800 shadow-lg z-10 mb-5 bg-gradient-to-r from-black via-red-950 to-red-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav
+      className="
+        fixed w-full z-20
+        bg-gradient-to-r
+        from-purple-900/60
+        via-purple-800/60
+        to-purple-900/60
+        backdrop-blur-xl
+        border-b border-white/10
+        shadow-md shadow-purple-900/40
+      "
+    >
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <h1 className="text-2xl font-bold text-">NABILA LATIFA TULLAILI</h1> 
-          <div className="hidden md:flex space-x-4">
-            <Link
-              to="hero"
-              smooth={true}
-              duration={500}
-              className="hover:text-pink-300 cursor-pointer"
-            >
+          
+          {/* Logo / Name */}
+          <h1 className="text-white font-extrabold tracking-wide text-lg md:text-xl">
+            NABILA LATIFA TULLAILI
+          </h1>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-6">
+            <Link to="hero" smooth duration={500} className={itemClass}>
               Home
             </Link>
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              className="hover:text-pink-300 cursor-pointer"
-            >
+            <Link to="about" smooth duration={500} className={itemClass}>
               About
             </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              className="hover:text-pink-300 cursor-pointer"
-            >
+            <Link to="achievements" smooth duration={500} className={itemClass}>
+              Achievements
+            </Link>
+            <Link to="projects" smooth duration={500} className={itemClass}>
               Projects
             </Link>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              className="hover:text-pink-300 cursor-pointer"
-            >
+            <Link to="contact" smooth duration={500} className={itemClass}>
               Contact
             </Link>
           </div>
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-pink-300 hover:text-pink-200">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"} />
-            </svg>
+
+          {/* Mobile Button */}
+          <button
+            className="
+              md:hidden
+              text-white/85
+              border border-white/20
+              rounded-lg px-3 py-2
+              bg-white/5
+              hover:bg-white/10
+              transition
+            "
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            {isOpen ? "Close" : "Menu"}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div
+            className="
+              md:hidden mt-2 pb-3 space-y-1
+              bg-purple-900/70
+              backdrop-blur-lg
+              rounded-xl
+              border border-white/10
+            "
+          >
+            {[
+              ["hero", "Home"],
+              ["about", "About"],
+              ["achievements", "Achievements"],
+              ["projects", "Projects"],
+              ["contact", "Contact"],
+            ].map(([to, label]) => (
+              <Link
+                key={to}
+                to={to}
+                smooth
+                duration={500}
+                className="
+                  block px-4 py-2 rounded-lg
+                  text-white/80
+                  hover:text-white
+                  hover:bg-white/10
+                  transition cursor-pointer
+                "
+                onClick={() => setIsOpen(false)}
+              >
+                {label}
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
-      {isOpen && (
-        <div className="md:hidden bg-red-950">
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            className="block px-4 py-2 text-sm hover:text-pink-300 cursor-pointer"
-          >
-            Home
-          </Link>
-          <Link
-            to="about"
-            smooth={true}
-            duration={500}
-            className="block px-4 py-2 text-sm hover:text-pink-300 cursor-pointer"
-          >
-            About
-          </Link>
-          <Link
-            to="projects"
-            smooth={true}
-            duration={500}
-            className="block px-4 py-2 text-sm hover:text-pink-300 cursor-pointer"
-          >
-            Projects
-          </Link>
-          <Link
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="block px-4 py-2 text-sm hover:text-pink-300 cursor-pointer"
-          >
-            Contact
-          </Link>
-        </div>
-      )}
     </nav>
   );
 };
