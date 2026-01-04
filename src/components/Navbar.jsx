@@ -22,7 +22,6 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          
           <h1 className="text-white font-extrabold tracking-wide text-lg md:text-xl">
             NABILA LATIFA TULLAILI
           </h1>
@@ -78,6 +77,7 @@ const Navbar = () => {
               ["hero", "Home"],
               ["about", "About"],
               ["achievements", "Achievements"],
+              ["experiences", "Experiences"],
               ["projects", "Projects"],
               ["contact", "Contact"],
             ].map(([to, label]) => (

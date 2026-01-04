@@ -195,7 +195,7 @@ export default function Projects() {
             </IconButton>
 
             <div className="relative p-5 md:p-7">
-              <div className="relative min-h-[420px] md:min-h-[360px]">
+              <div className="relative min-h-[680px] sm:min-h-[620px] md:min-h-[360px]">
                 <AnimatePresence initial={false} custom={direction} mode="wait">
                   <ProjectCard
                     key={current.title}
