@@ -227,7 +227,7 @@ export default function Projects() {
 function ProjectCard({ data, direction, variants }) {
   return (
     <motion.div
-      className="absolute inset-0"
+      className="relative md:absolute md:inset-0"
       custom={direction}
       variants={variants}
       initial="enter"
@@ -236,7 +236,7 @@ function ProjectCard({ data, direction, variants }) {
     >
       <div
         className="
-          h-full rounded-2xl
+          h-auto md:h-full rounded-2xl
           border border-white/10
           bg-gradient-to-b from-white/10 via-white/5 to-transparent
           overflow-hidden
@@ -272,9 +272,7 @@ function ProjectCard({ data, direction, variants }) {
               {data.subtitle}
             </p>
 
-            <p className="mt-3 text-white/80 text-sm leading-relaxed">
-              {data.desc}
-            </p>
+            <p className="mt-3 text-white/80 text-sm leading-relaxed">{data.desc}</p>
 
             <div className="mt-4 flex flex-wrap gap-2">
               {data.tags.map((t) => (
