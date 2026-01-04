@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portofolio-nbilatifaa/static/css/main.8d6fd5c4.css",
-    "main.js": "/portofolio-nbilatifaa/static/js/main.45fc54cd.js",
+    "main.js": "/portofolio-nbilatifaa/static/js/main.95d4fb98.js",
     "static/media/Photobooth.png": "/portofolio-nbilatifaa/static/media/Photobooth.5ea30e659a32ab89a978.png",
     "static/media/artweb.png": "/portofolio-nbilatifaa/static/media/artweb.6414b9a8dccb4082401f.png",
     "static/media/iSec.png": "/portofolio-nbilatifaa/static/media/iSec.a569cf6aec97abf2f6d9.png",
@@ -14,10 +14,10 @@
     "static/media/ormawaweb.jpg": "/portofolio-nbilatifaa/static/media/ormawaweb.e6b92e60d302d12385b4.jpg",
     "index.html": "/portofolio-nbilatifaa/index.html",
     "main.8d6fd5c4.css.map": "/portofolio-nbilatifaa/static/css/main.8d6fd5c4.css.map",
-    "main.45fc54cd.js.map": "/portofolio-nbilatifaa/static/js/main.45fc54cd.js.map"
+    "main.95d4fb98.js.map": "/portofolio-nbilatifaa/static/js/main.95d4fb98.js.map"
   },
   "entrypoints": [
     "static/css/main.8d6fd5c4.css",
-    "static/js/main.45fc54cd.js"
+    "static/js/main.95d4fb98.js"
   ]
 }
