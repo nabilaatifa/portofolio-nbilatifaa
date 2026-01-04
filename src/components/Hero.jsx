@@ -57,8 +57,10 @@ const Hero = () => {
 
       <div className="mt-8 flex gap-3">
         <a
-          href="/CV_NabilaLatifaTullaili.pdf"
-          download
+          href={`${process.env.PUBLIC_URL}/CV_NabilaLatifaTullaili.pdf`}
+          download="CV_NabilaLatifaTullaili.pdf"
+          target="_blank"
+          rel="noreferrer"
           className="
             glow-btn
             px-5 py-2.5
