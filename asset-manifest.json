@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portofolio-nbilatifaa/static/css/main.60bbe455.css",
-    "main.js": "/portofolio-nbilatifaa/static/js/main.69483d03.js",
+    "main.css": "/portofolio-nbilatifaa/static/css/main.567f3162.css",
+    "main.js": "/portofolio-nbilatifaa/static/js/main.154d267c.js",
     "static/media/Photobooth.png": "/portofolio-nbilatifaa/static/media/Photobooth.5ea30e659a32ab89a978.png",
     "static/media/artweb.png": "/portofolio-nbilatifaa/static/media/artweb.6414b9a8dccb4082401f.png",
     "static/media/iSec.png": "/portofolio-nbilatifaa/static/media/iSec.a569cf6aec97abf2f6d9.png",
@@ -13,11 +13,11 @@
     "static/media/lombaweb.jpg": "/portofolio-nbilatifaa/static/media/lombaweb.3d005636dad2b62b6144.jpg",
     "static/media/ormawaweb.jpg": "/portofolio-nbilatifaa/static/media/ormawaweb.e6b92e60d302d12385b4.jpg",
     "index.html": "/portofolio-nbilatifaa/index.html",
-    "main.60bbe455.css.map": "/portofolio-nbilatifaa/static/css/main.60bbe455.css.map",
-    "main.69483d03.js.map": "/portofolio-nbilatifaa/static/js/main.69483d03.js.map"
+    "main.567f3162.css.map": "/portofolio-nbilatifaa/static/css/main.567f3162.css.map",
+    "main.154d267c.js.map": "/portofolio-nbilatifaa/static/js/main.154d267c.js.map"
   },
   "entrypoints": [
-    "static/css/main.60bbe455.css",
-    "static/js/main.69483d03.js"
+    "static/css/main.567f3162.css",
+    "static/js/main.154d267c.js"
   ]
 }
