@@ -59,8 +59,6 @@ const Hero = () => {
         <a
           href={`${process.env.PUBLIC_URL}/CV_NabilaLatifaTullaili.pdf`}
           download="CV_NabilaLatifaTullaili.pdf"
-          target="_blank"
-          rel="noreferrer"
           className="
             glow-btn
             px-5 py-2.5
