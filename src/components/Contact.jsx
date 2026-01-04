@@ -32,7 +32,6 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-pad relative overflow-hidden">
-      {/* ambient glow */}
       <div className="absolute -top-48 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-700/20 blur-3xl" />
 
       <div className="relative max-w-5xl mx-auto px-4 text-center">
@@ -41,7 +40,6 @@ const Contact = () => {
           Open to academic opportunities, collaboration, and professional networking.
         </p>
 
-        {/* contact icons */}
         <div className="mt-14 flex flex-wrap justify-center gap-16">
           {contacts.map((c) => (
             <a

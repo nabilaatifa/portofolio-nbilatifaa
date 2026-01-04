@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== SUPER STRONG PURPLE IT GRADIENT ===== */
 :root{
   --bg-dark: #05020d;
   --bg-deep: #0a0420;
@@ -25,12 +24,10 @@ body{
     linear-gradient(180deg, var(--bg-dark) 0%, #12073a 45%, var(--bg-deep) 100%);
 }
 
-/* spacing */
 .section-pad{
   padding: 8rem 0;
 }
 
-/* title */
 .section-title{
   font-size: 2.8rem;
   font-weight: 900;
@@ -53,7 +50,6 @@ body{
   color: var(--text-muted);
 }
 
-/* glass */
 .glass-card{
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.22);
@@ -67,7 +63,6 @@ body{
   box-shadow: 0 40px 120px rgba(124,58,237,0.65);
 }
 
-/* glow overlay */
 .card-glow::after{
   content:"";
   position:absolute;
@@ -79,7 +74,6 @@ body{
 }
 .group:hover .card-glow::after{opacity:1}
 
-/* button */
 .glow-btn{
   background:linear-gradient(90deg,#7c3aed,#a855f7,#ec4899);
   box-shadow:0 0 25px rgba(168,85,247,.6),0 0 60px rgba(124,58,237,.45);

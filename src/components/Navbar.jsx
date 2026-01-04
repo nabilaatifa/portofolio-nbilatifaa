@@ -23,12 +23,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           
-          {/* Logo / Name */}
           <h1 className="text-white font-extrabold tracking-wide text-lg md:text-xl">
             NABILA LATIFA TULLAILI
           </h1>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-6">
             <Link to="hero" smooth duration={500} className={itemClass}>
               Home
@@ -39,6 +37,9 @@ const Navbar = () => {
             <Link to="achievements" smooth duration={500} className={itemClass}>
               Achievements
             </Link>
+            <Link to="experiences" smooth duration={500} className={itemClass}>
+              Experiences
+            </Link>
             <Link to="projects" smooth duration={500} className={itemClass}>
               Projects
             </Link>
@@ -47,7 +48,6 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Button */}
           <button
             className="
               md:hidden
@@ -64,7 +64,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isOpen && (
           <div
             className="

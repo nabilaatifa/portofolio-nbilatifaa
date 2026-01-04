@@ -8,12 +8,9 @@ const Hero = () => {
       id="hero"
       className="min-h-screen flex flex-col justify-center items-center text-center section-pad relative overflow-hidden"
     >
-      {/* soft ambient background (jauh dari foto) */}
       <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-purple-600/10 blur-3xl" />
 
-      {/* PHOTO (NETRAL, TIDAK KEUNGUAN) */}
       <div className="relative">
-        {/* neutral backdrop */}
         <div className="absolute inset-0 rounded-xl bg-black/30 blur-md" />
 
         <img
@@ -29,23 +26,19 @@ const Hero = () => {
         />
       </div>
 
-      {/* NAME */}
       <h1 className="mt-8 text-2xl md:text-3xl font-extrabold text-white tracking-tight">
         Nabila Latifa Tullaili
       </h1>
 
-      {/* ROLE */}
       <p className="mt-2 text-sm md:text-base text-white/75 font-medium">
         Information Systems Undergraduate
       </p>
 
-      {/* DESCRIPTION */}
       <p className="mt-4 max-w-2xl px-6 text-white/70 text-sm md:text-base leading-relaxed">
         Undergraduate student of Information Systems at University of Singaperbangsa Karawang
         with an interest in digital systems, academic projects, and technology-based solutions.
       </p>
 
-      {/* TAGS (HONEST & SIMPLE) */}
       <div className="mt-5 flex flex-wrap justify-center gap-2">
         {[
           "Information Systems",
@@ -62,12 +55,10 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* CTA */}
       <div className="mt-8 flex gap-3">
-        <Link
-          to="projects"
-          smooth
-          duration={500}
+        <a
+          href="/CV_NabilaLatifaTullaili.pdf"
+          download
           className="
             glow-btn
             px-5 py-2.5
@@ -75,14 +66,14 @@ const Hero = () => {
             text-sm
             text-white
             font-semibold
-            cursor-pointer
+            inline-flex items-center justify-center
           "
         >
-          View Projects
-        </Link>
+          Download CV
+        </a>
 
         <Link
-          to="contact"
+          to="projects"
           smooth
           duration={500}
           className="
@@ -97,7 +88,7 @@ const Hero = () => {
             cursor-pointer
           "
         >
-          Contact
+          View Projects
         </Link>
       </div>
     </section>

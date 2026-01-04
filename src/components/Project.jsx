@@ -34,7 +34,7 @@ function Project() {
       subtitle: "Public speaking",
       desc: "A collection of certificates and documentation related to MC/moderator experiences and event hosting.",
       tags: ["Public Speaking", "Events", "Certificates"],
-      img: MC, // placeholder
+      img: MC,
       link: PORTMC,
     },
     {
@@ -42,7 +42,7 @@ function Project() {
       subtitle: "Awards & achievements",
       desc: "Certificates from competitions, academic programs, and achievement documentation for quick review.",
       tags: ["Awards", "Competitions", "Achievements"],
-      img: LOMBA, // placeholder
+      img: LOMBA,
       link: PORTLOMBA,
     },
     {
@@ -50,7 +50,7 @@ function Project() {
       subtitle: "Figma & academic work",
       desc: "Projects aligned with Information Systems, including UI/UX prototypes (Figma) and other academic deliverables.",
       tags: ["UI/UX", "Figma", "Information Systems"],
-      img: IT, // placeholder
+      img: IT,
       link: PORTIT,
     },
     {
@@ -72,9 +72,9 @@ function Project() {
   ];
 
   return (
-    <section id="projects" className="min-h-screen text-center section-pad">
+    <section id="experiences" className="min-h-screen text-center section-pad">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="section-title">Projects</h2>
+        <h2 className="section-title">Experiences</h2>
         <p className="section-subtitle">
           A quick overview of my portfolio. Click a card to explore more.
         </p>
@@ -96,7 +96,6 @@ function Project() {
                 transition hover:-translate-y-1
               "
             >
-              {/* image */}
               <div className="relative">
                 <img
                   src={it.img}
@@ -106,7 +105,6 @@ function Project() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent opacity-80" />
               </div>
 
-              {/* content */}
               <div className="p-6 bg-gradient-to-b from-purple-950 via-purple-900 to-purple-800 text-white flex-1">
                 <p className="text-xs text-white/70 font-medium tracking-wide">
                   {it.subtitle}
@@ -131,7 +129,6 @@ function Project() {
                   ))}
                 </div>
 
-                {/* CTA */}
                 <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/90 group-hover:text-white underline underline-offset-4">
                   Open folder
                   <span className="transition group-hover:translate-x-0.5">→</span>
