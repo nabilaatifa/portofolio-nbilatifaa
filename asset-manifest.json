@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/portofolio-nbilatifaa/static/css/main.e2eb200c.css",
-    "main.js": "/portofolio-nbilatifaa/static/js/main.b9f45dc5.js",
-    "static/media/portfolio.png": "/portofolio-nbilatifaa/static/media/portfolio.eaefaef0d040a613fe53.png",
+    "main.css": "/portofolio-nbilatifaa/static/css/main.8d6fd5c4.css",
+    "main.js": "/portofolio-nbilatifaa/static/js/main.45fc54cd.js",
+    "static/media/Photobooth.png": "/portofolio-nbilatifaa/static/media/Photobooth.5ea30e659a32ab89a978.png",
     "static/media/artweb.png": "/portofolio-nbilatifaa/static/media/artweb.6414b9a8dccb4082401f.png",
+    "static/media/iSec.png": "/portofolio-nbilatifaa/static/media/iSec.a569cf6aec97abf2f6d9.png",
     "static/media/itweb.png": "/portofolio-nbilatifaa/static/media/itweb.3673bc04fe739d024095.png",
+    "static/media/portfolio.png": "/portofolio-nbilatifaa/static/media/portfolio.2a3f3f2996eeae22e997.png",
+    "static/media/FinConnect.png": "/portofolio-nbilatifaa/static/media/FinConnect.3b7c080e2a4d987890f5.png",
     "static/media/mcweb.jpg": "/portofolio-nbilatifaa/static/media/mcweb.9a6d67b2ad87403d44d6.jpg",
     "static/media/decoweb.jpg": "/portofolio-nbilatifaa/static/media/decoweb.d6ce7807be1d5e054178.jpg",
     "static/media/lombaweb.jpg": "/portofolio-nbilatifaa/static/media/lombaweb.3d005636dad2b62b6144.jpg",
     "static/media/ormawaweb.jpg": "/portofolio-nbilatifaa/static/media/ormawaweb.e6b92e60d302d12385b4.jpg",
     "index.html": "/portofolio-nbilatifaa/index.html",
-    "main.e2eb200c.css.map": "/portofolio-nbilatifaa/static/css/main.e2eb200c.css.map",
-    "main.b9f45dc5.js.map": "/portofolio-nbilatifaa/static/js/main.b9f45dc5.js.map"
+    "main.8d6fd5c4.css.map": "/portofolio-nbilatifaa/static/css/main.8d6fd5c4.css.map",
+    "main.45fc54cd.js.map": "/portofolio-nbilatifaa/static/js/main.45fc54cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2eb200c.css",
-    "static/js/main.b9f45dc5.js"
+    "static/css/main.8d6fd5c4.css",
+    "static/js/main.45fc54cd.js"
   ]
 }
