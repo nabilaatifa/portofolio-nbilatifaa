@@ -3,6 +3,24 @@ import React from "react";
 const Achievements = () => {
   const items = [
     {
+      title: "Student Exchange | International Student Mobility 2026",
+      badge: "Selected Delegate",
+      desc:
+        "Selected for the International Student Mobility Program at Wuhan Vocational College of Software and Engineering, China. Focusing on industrial internet and global academic collaboration in information technology.",
+      tags: [
+        "International Program",
+        "Software Engineering",
+        "Global Collaboration",
+      ],
+    },
+    {
+      title: "Video Content Competition | My Global Learning Journey 2026 | ITEA",
+      badge: "3rd Place",
+      desc:
+        "Awarded 3rd Place in the My Global Learning Journey 2026 video competition for producing a creative and engaging visual story that showcased international learning experiences and cross-cultural perspectives.",
+      tags: ["Content Creation", "Storytelling", "Study Abroad"],
+    },
+    {
       title: "Business Plan Competition | CompFair 2025",
       badge: "1st Place",
       desc:
@@ -23,16 +41,21 @@ const Achievements = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="section-title">Achievements</h2>
         <p className="section-subtitle">
-          Selected highlights that reflect my academic progress and interest in technology-based solutions.
+          Selected highlights that reflect my academic progress and interest in
+          technology-based solutions.
         </p>
 
         <div className="grid gap-6 grid-cols-1 md:grid-cols-2 mt-10">
           {items.map((it) => (
-            <div key={it.title} className="glass-card rounded-2xl p-6">
+            <div
+              key={it.title}
+              className="glass-card rounded-2xl p-6"
+            >
               <div className="flex items-start justify-between gap-4">
                 <h3 className="text-lg font-extrabold text-white leading-snug">
                   {it.title}
                 </h3>
+
                 <span className="shrink-0 text-xs font-bold px-3 py-1 rounded-full bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white">
                   {it.badge}
                 </span>

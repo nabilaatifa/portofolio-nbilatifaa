@@ -5,7 +5,15 @@ import LOMBA from "../assets/lombaweb.jpg";
 import IT from "../assets/itweb.png";
 import ART from "../assets/artweb.png";
 import DECO from "../assets/decoweb.jpg";
+import RESEARCH from "../assets/researchweb.png";
+import ABROAD from "../assets/abroadweb.png";
+import ACADEMIC from "../assets/academicweb.png";
 
+
+const PORTSTUDYABROAD =
+  "https://drive.google.com/drive/folders/1Jf6hogz3zq89JyChzWbD236WM-q6j80z?usp=sharing";
+const PORTACADEMIC =
+  "https://drive.google.com/drive/folders/1EweQrI8RU-hrejmJfb5Saeq1f9JaC5ZQ?usp=sharing";
 const PORTORMAWA =
   "https://drive.google.com/drive/folders/1AsF9eai4a6Lt8an2B32-7__9wzMVzL8i?usp=sharing";
 const PORTMC =
@@ -18,9 +26,43 @@ const PORTART =
   "https://drive.google.com/drive/folders/1agXtK4aN-K2QhY5FD5CB6VAOH3KYQ8uH?usp=sharing";
 const PORTDECO =
   "https://drive.google.com/drive/folders/10r8O9XScX512Dec6Ehd7lg1am6dWImOH?usp=sharing";
+const PORTRESEARCH =
+  "https://drive.google.com/drive/folders/1GCcLbHqFH6mlyM1dJgrAv4MbiiXho-pW?usp=sharing";
 
 function Project() {
   const items = [
+    {
+      title: "Study Abroad",
+      subtitle: "International academic program",
+      desc: "Documentation of my study abroad program, including participation certificates and the final transcript of credits earned during the exchange.",
+      tags: ["Study Abroad", "Certificates", "Transcript"],
+      img: ABROAD,
+      link: PORTSTUDYABROAD,
+    },
+    {
+      title: "Academic Exposure",
+      subtitle: "International training program",
+      desc: "A collection of certificates and documentation from international academic exposure programs, industrial training, workshops, and technical learning activities conducted in China.",
+      tags: ["Training", "Certificates", "International"],
+      img: ACADEMIC,
+      link: PORTACADEMIC,
+    },
+    {
+      title: "Competition Certificates",
+      subtitle: "Awards & achievements",
+      desc: "Certificates from competitions, academic programs, and achievement documentation for quick review.",
+      tags: ["Awards", "Competitions", "Achievements"],
+      img: LOMBA,
+      link: PORTLOMBA,
+    },
+    {
+      title: "Research & Academic Publications",
+      subtitle: "Journal & research work",
+      desc: "Collection of academic research, journal papers, and analytical studies related to Information Systems, digital transformation, and technology-based solutions.",
+      tags: ["Research", "Journal", "Information Systems"],
+      img: RESEARCH,
+      link: PORTRESEARCH,
+    },
     {
       title: "Organization & Committees",
       subtitle: "Campus involvement",
@@ -36,14 +78,6 @@ function Project() {
       tags: ["Public Speaking", "Events", "Certificates"],
       img: MC,
       link: PORTMC,
-    },
-    {
-      title: "Competition Certificates",
-      subtitle: "Awards & achievements",
-      desc: "Certificates from competitions, academic programs, and achievement documentation for quick review.",
-      tags: ["Awards", "Competitions", "Achievements"],
-      img: LOMBA,
-      link: PORTLOMBA,
     },
     {
       title: "IT & Campus Projects",
@@ -131,16 +165,14 @@ function Project() {
 
                 <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-white/90 group-hover:text-white underline underline-offset-4">
                   Open folder
-                  <span className="transition group-hover:translate-x-0.5">→</span>
+                  <span className="transition group-hover:translate-x-0.5">
+                    →
+                  </span>
                 </div>
               </div>
             </a>
           ))}
         </div>
-
-        <p className="mt-10 text-white/55 text-sm">
-
-        </p>
       </div>
     </section>
   );

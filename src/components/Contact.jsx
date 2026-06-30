@@ -13,13 +13,13 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/nabila-latifa-577091209/",
+      link: "https://www.linkedin.com/in/nabilalatifatullaili1",
       desc: "Professional Profile",
     },
     {
       icon: <FaInstagram />,
       label: "Instagram",
-      link: "https://instagram.com/matchavabilla",
+      link: "https://instagram.com/nbilatifaa",
       desc: "Creative Updates",
     },
     {
@@ -31,11 +31,26 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-pad relative overflow-hidden">
-      <div className="absolute -top-48 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-purple-700/20 blur-3xl" />
+    <section id="contact" className="relative section-pad overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div
+          className="absolute inset-0 opacity-[0.10]"
+          style={{
+            backgroundImage:
+              "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.30) 1px, transparent 0)",
+            backgroundSize: "30px 30px",
+          }}
+        />
+
+        <div className="absolute -top-40 left-[-180px] h-[540px] w-[540px] rounded-full bg-purple-500/12 blur-3xl" />
+        <div className="absolute top-0 right-[-180px] h-[540px] w-[540px] rounded-full bg-purple-500/12 blur-3xl" />
+
+        <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-b from-transparent to-purple-500/10" />
+      </div>
 
       <div className="relative max-w-5xl mx-auto px-4 text-center">
         <h2 className="section-title">Let’s Connect</h2>
+
         <p className="section-subtitle">
           Open to academic opportunities, collaboration, and professional networking.
         </p>
@@ -66,6 +81,7 @@ const Contact = () => {
               <h3 className="text-white font-semibold">
                 {c.label}
               </h3>
+
               <p className="text-white/60 text-sm">
                 {c.desc}
               </p>

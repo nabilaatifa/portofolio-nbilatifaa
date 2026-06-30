@@ -4,100 +4,152 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const itemClass =
-    "cursor-pointer text-white/80 hover:text-white transition font-medium relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-purple-400 hover:after:w-full after:transition-all after:duration-300";
+  const navItems = [
+    ["hero", "Home"],
+    ["about", "About"],
+    ["achievements", "Achievements"],
+    ["experiences", "Experiences"],
+    ["projects", "Projects"],
+    ["contact", "Contact"],
+  ];
 
   return (
-    <nav
-      className="
-        fixed w-full z-20
-        bg-gradient-to-r
-        from-purple-900/60
-        via-purple-800/60
-        to-purple-900/60
-        backdrop-blur-xl
-        border-b border-white/10
-        shadow-md shadow-purple-900/40
-      "
-    >
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <h1 className="text-white font-extrabold tracking-wide text-lg md:text-xl">
+    <nav className="fixed top-5 left-0 right-0 z-50 px-4">
+      <div
+        className="
+          max-w-6xl mx-auto
+          rounded-[30px]
+          border border-white/10
+          bg-white/[0.03]
+          backdrop-blur-2xl
+          shadow-[0_10px_40px_rgba(0,0,0,0.25)]
+        "
+      >
+        <div className="flex items-center justify-between h-20 px-8">
+          {/* Logo */}
+          <h1
+            className="
+              text-white
+              font-black
+              tracking-wide
+              text-lg
+              md:text-2xl
+              whitespace-nowrap
+            "
+          >
             NABILA LATIFA TULLAILI
           </h1>
 
-          <div className="hidden md:flex items-center gap-6">
-            <Link to="hero" smooth duration={500} className={itemClass}>
-              Home
-            </Link>
-            <Link to="about" smooth duration={500} className={itemClass}>
-              About
-            </Link>
-            <Link to="achievements" smooth duration={500} className={itemClass}>
-              Achievements
-            </Link>
-            <Link to="experiences" smooth duration={500} className={itemClass}>
-              Experiences
-            </Link>
-            <Link to="projects" smooth duration={500} className={itemClass}>
-              Projects
-            </Link>
-            <Link to="contact" smooth duration={500} className={itemClass}>
-              Contact
-            </Link>
-          </div>
-
-          <button
-            className="
-              md:hidden
-              text-white/85
-              border border-white/20
-              rounded-lg px-3 py-2
-              bg-white/5
-              hover:bg-white/10
-              transition
-            "
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? "Close" : "Menu"}
-          </button>
-        </div>
-
-        {isOpen && (
-          <div
-            className="
-              md:hidden mt-2 pb-3 space-y-1
-              bg-purple-900/70
-              backdrop-blur-lg
-              rounded-xl
-              border border-white/10
-            "
-          >
-            {[
-              ["hero", "Home"],
-              ["about", "About"],
-              ["achievements", "Achievements"],
-              ["experiences", "Experiences"],
-              ["projects", "Projects"],
-              ["contact", "Contact"],
-            ].map(([to, label]) => (
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center gap-8">
+            {navItems.map(([to, label]) => (
               <Link
                 key={to}
                 to={to}
-                smooth
+                smooth={true}
                 duration={500}
+                offset={-90}
+                spy={true}
                 className="
-                  block px-4 py-2 rounded-lg
-                  text-white/80
+                  relative
+                  cursor-pointer
+                  text-white/70
                   hover:text-white
-                  hover:bg-white/10
-                  transition cursor-pointer
+                  transition-all
+                  duration-300
+                  font-medium
+
+                  after:absolute
+                  after:left-1/2
+                  after:-translate-x-1/2
+                  after:-bottom-2
+                  after:h-[2px]
+                  after:w-0
+                  after:bg-purple-400
+                  after:rounded-full
+                  after:transition-all
+                  after:duration-300
+
+                  hover:after:w-full
                 "
-                onClick={() => setIsOpen(false)}
               >
                 {label}
               </Link>
             ))}
+          </div>
+
+          {/* Mobile Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden relative w-8 h-8"
+          >
+            <span
+              className={`
+                absolute left-0 top-2
+                h-[2px] w-6
+                bg-white rounded-full
+                transition-all duration-300
+                ${isOpen ? "top-4 rotate-45" : ""}
+              `}
+            />
+
+            <span
+              className={`
+                absolute right-0 top-4
+                h-[2px] w-4
+                bg-white rounded-full
+                transition-all duration-300
+                ${isOpen ? "opacity-0" : ""}
+              `}
+            />
+
+            <span
+              className={`
+                absolute left-0 top-6
+                h-[2px] w-6
+                bg-white rounded-full
+                transition-all duration-300
+                ${isOpen ? "top-4 -rotate-45" : ""}
+              `}
+            />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <div className="md:hidden px-4 pb-4">
+            <div
+              className="
+                rounded-3xl
+                overflow-hidden
+                border border-white/10
+                bg-white/[0.03]
+                backdrop-blur-xl
+              "
+            >
+              {navItems.map(([to, label]) => (
+                <Link
+                  key={to}
+                  to={to}
+                  smooth={true}
+                  duration={500}
+                  offset={-90}
+                  onClick={() => setIsOpen(false)}
+                  className="
+                    block
+                    px-5
+                    py-4
+                    text-white/80
+                    hover:text-white
+                    hover:bg-white/5
+                    cursor-pointer
+                    transition
+                  "
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
           </div>
         )}
       </div>
